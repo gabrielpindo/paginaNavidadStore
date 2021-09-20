@@ -1,0 +1,476 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body.modoOscuro{
+    background-color: rgb(8, 7, 7);
+    color:white;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    
+    position:relative;
+
+    
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+nav i{
+    margin-right: 100px;
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+nav i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s;  
+    
+}
+
+nav{
+    position: absolute;
+    right: 10px;
+    display:flex;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav li:hover{
+    cursor: pointer;  
+    transform:scale(1.02);
+    transition: all .5s;  
+}
+
+header h2{
+    margin-left: 150px;
+}
+
+header h2:hover{
+    color:#ad2331;
+    cursor: pointer;
+}
+
+#menuNav{
+    display: none;
+}
+
+/*1ra tarjeta */
+
+.sentAGift{
+    display:flex;
+    flex-direction: row;
+    width: 100vw;    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    position:relative;
+    margin-top: 50px;
+
+}
+
+.sentAGift img{
+    width: 450px;
+    height: 450px;
+}
+
+.sentAGiftText{
+    display:flex;
+    flex-direction: column;
+    width: 70vh;
+    
+    justify-content: center;
+    
+} 
+
+.sentAGiftText h1{
+    margin-bottom: 20px;
+    font-size:40px;
+}
+
+
+ 
+.sentAGiftText p{
+    font-size: 18px;
+    font-style: none;
+}
+
+.sentAGift button{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C42130;
+    color:white;
+    margin-top: 50px;
+}
+
+.sentAGift button:hover{
+    cursor: pointer;
+    transform:scale(1.01);
+    background-color: #ad2331;
+    
+    transition: all .7s;
+}
+
+/*Tarjetas*/
+
+.decorations{
+    width: 100vh;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 150px;
+
+}
+
+.decorations h1{
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+
+}
+
+.conjuntoTarjetas{
+    display:flex;
+    flex-direction: row;
+
+    justify-content: center;
+    
+}
+
+.tarjeta:hover{
+    cursor: pointer;
+    transform:scale(1.01);
+    transition: all .7s;
+}
+
+.tarjeta{
+    box-shadow: 0 2px 6px rgba(65,11,16,.15);
+    
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.tarjeta img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.tarjeta h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.tarjeta h3{
+    text-align: center;
+    color: #C42130;
+    margin: 15px;
+}
+
+
+
+
+/*Shop*/
+
+
+.store{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.producto{
+    position: relative;
+}
+
+.store img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.accesorios{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    justify-content:center;
+    align-items: center;
+}
+
+.accesorios div{
+    box-shadow: 0 2px 6px rgba(65,11,16,.15);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.producto:hover{
+    cursor: pointer;
+    transform:scale(1.01);
+    transition: all .7s;
+}
+
+.store i{
+    font-size: 40px;
+    color: red;
+    position:absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+/*Send*/
+
+.sentNow{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60rem;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    border: 1px solid red;
+    background-color: #DE3B49;
+    margin-bottom: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.sentNow img{
+    width: 400px;
+    height:300px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+.textoSent{
+    color:white;
+    padding: 10px;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+}
+
+form{
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    padding: 10px;
+    position: relative;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+form input{
+    border:none;
+    width: 100%;
+    height: 100%;
+}
+
+.sentNow a{
+    background-color: #C42130;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.sentNow h1{
+    margin-bottom: 20px;
+}
+
+
+.principales{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+   
+    
+}
+
+.principales ul{
+    margin: 60px;
+}
+
+.principales ul h2{
+    margin-bottom: 25px;
+}
+
+.socialMedia {
+    display:flex;
+    flex-direction:row;
+   margin:0px;
+
+}
+
+.socialMedia li {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 500px){
+    header h2{
+        font-size: 3.3em;
+    }
+    header i{
+        font-size: 3em;
+    }
+    header{
+        margin-bottom: 8em;
+    }
+    .sentAGift{
+        flex-direction: column;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .sentAGiftText{
+        width: 100%;
+    }
+    .sentAGiftText h1{
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .sentAGiftText p{
+        font-size: 2.3em;
+    }
+    .conjuntoTarjetas{
+        display:flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .decorations h1{
+        font-size: 3.5em;
+    }
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarjeta h2{
+        font-size: 3em;
+    }
+    .tarjeta h3{
+        font-size: 2em;
+    }
+
+    .store{
+        width:90%;
+        margin-left:auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .store h2{
+        font-size: 3em;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .store .accesorios{
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        width: 90%;
+        
+    }
+    .producto img{
+        width: 20em;
+        height: 20em;
+    }
+    .producto h3{
+        font-size: 2em;
+    }
+    .producto p{
+        font-size: 1.8em;
+    }
+
+    .sentNow{
+        display:flex;
+        flex-direction: column;
+    }
+    .textoSent{
+        width:90%;
+        text-align: center;
+        font-size: 2em;
+    }
+    .sentNow input{
+        font-size: 1em;
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    header{
+        position:relative;
+        display:flex;
+        width:100%;
+    }
+    nav i{
+        position:absolute;
+        right: 0px;
+    }
+    nav ul{
+        display:none;
+    }
+    body{
+        width:100%;
+        display:flex;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .contenedor{
+        width: 90%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sentAGift{
+        width: 90%;
+    }
+    .decorations{
+        width: 90%;
+    }
+}
